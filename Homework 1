@@ -1,0 +1,159 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+using namespace std;
+
+ // My name.
+#include <iostream>
+
+int main() {
+std::cout « "My name is Anton!" ;
+return 0;
+}
+
+    // Arithmetic.
+    double number1, number2;
+    cout << "First figure: ";
+    cin >> number1;
+    cout << "Second figure: ";
+    cin >> number2;
+    cout << "Sum: " << figure1 + figure2;
+    cout << "\nDifference: " << figure1 - figure2;
+    cout << "\nMultiplication: " << figure1 * figure2;
+    if (figurer2 == 0) {
+        cout << "\nDivision: not avaliable";
+    }
+    else {
+        cout << "\nDivision: " << figure1 / figure2 << endl << endl;
+    }
+
+    // Calculator.
+    #include <iostream> 
+    int main(){
+    int a = 0;
+    int b = 0;
+    char operation;
+    std::cout << "Enter first figure";
+    std::cin >> a;
+    std::cout << "Enter second figure";
+    std::cin >> a;
+    std::cout << "Enter operation";
+    std::cin >> operation;
+    
+    switch (operation){
+    case '+':
+    std::cout << "a + b =" << a + b << '\n';
+    break;
+    case '-':
+    std::cout << "a - b =" << a - b << '\n';
+    break;
+    case '*':
+    std::cout << "a * b =" << a * b << '\n';
+    break;
+    case '/':
+    std::cout << "a / b =" << a / b << '\n';
+    break;
+    default:
+    std::cout<< "Error\n";
+    }
+    return 0;
+    }
+    
+    
+  
+
+    // quadratic education.
+    double A, B, C, disc;
+    cout << "ax^2 + bx + c = 0\na: ";
+    cin >> A;
+    cout << "b: ";
+    cin >> B;
+    cout << "c: ";
+    cin >> C;
+    disc = B * B - 4 * A * C;
+    if ((A == 0) && (B == 0) && (C == 0)) {
+        cout << "x = any number" << endl << endl;
+    }
+    else {
+        if (((A == 0) && (B == 0)) || (disc < 0)) {
+            cout << "x = no answer" << endl << endl;
+        }
+        else {
+            if (A == 0) {
+                cout << "x = " << -(c / b) << endl << endl;
+            }
+            else {
+                cout << "x1 = " << (-B + sqrt(disc)) / (2 * A) << "\nx2 = " << (-B - sqrt(disc)) / (2 * A) << endl << endl;
+            }
+        }
+    }
+
+    // Lamp.
+   int main()
+{
+    setlocale(0, "");
+    bool is_day, is_curtians_closed, is_lamp_on;
+    string str_is_day, str_is_curtians_closed, str_is_lamp_on;
+    cout << "Now is day(1/0): ";
+    cin >> str_is_day;
+    if (str_is_day == "true" || str_is_day == "1") {
+        is_day = true;
+    }
+    else if (str_is_day == "false" || str_is_day == "0") {
+        is_day = false;
+    }
+    else {
+        cout << "Wrong enter" << endl;
+        return 0;
+    }
+    cout << "Шторы закрыты(1/0): ";
+    cin >> str_is_curtians_closed;
+    if (str_is_curtians_closed == "true" || str_is_curtians_closed == "1") {
+        is_curtians_closed = true;
+    }
+    else if (str_is_curtians_closed == "false" || str_is_curtians_closed == "0") {
+        is_curtians_closed = false;
+    }
+    else {
+        cout << "Wrong enter" << endl;
+        return 0;
+    }
+    cout << "Is a lamp turn on(1/0): ";
+    cin >> str_is_lamp_on;
+    if (str_is_lamp_on == "true" || str_is_lamp_on == "1") {
+        is_lamp_on = true;
+    }
+    else if (str_is_lamp_on == "false" || str_is_lamp_on == "0") {
+        is_lamp_on = false;
+    }
+    else {
+        cout << "Wrong enter" << endl;
+        return 0;
+    }
+
+    if ((is_day && (!is_curtians_closed)) || is_lamp_on) {
+        cout << "" << endl;
+    }
+    else {
+        cout << "darkly in room" << endl;
+    }
+    system("pause");
+}
+
+
+
+int main()
+{
+    double b, c;
+    cout << "Enter number b: ";
+    cin >> b;
+    cout << "Enter number c: ";
+    cin >> c;
+    if (b != 0) {
+        cout << "x = " << -(c / b) << endl;
+    }
+    else {
+        cout << "Incorect c." << endl;
+    }
+    system("pause");
+}
